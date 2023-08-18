@@ -13,7 +13,7 @@ Follow these steps to set up and run the simple web server locally and deploy it
 - Kubernetes (https://kubernetes.io/)
 - kubectl (https://kubernetes.io/docs/tasks/tools/)
 
-### Installation
+# Installation
 
 ## 1. Clone this repository to your local machine:
 
@@ -29,13 +29,13 @@ simple-webserver/
 │   ├── index.html
 │   └── styles.css
 └── server.js
-## Update the __public/index.html__ and __public/styles.css__ files to customize your web page.
+### Update the __public/index.html__ and __public/styles.css__ files to customize your web page.
 
 ## Local Usage ##
 Run the Node.js web server:
 node server.js
 # Docker and Kubernetes Deployment
-##
+
 ### 1. Build the Docker image:
    docker build -t apps/simpleserver:1.0 .
 ### 2. Check if the image is created:
@@ -46,9 +46,3 @@ node server.js
 This will create a Kubernetes deployment with 3 pods running the simple web server.
 
 Feel free to explore and adapt the code and configurations to suit your needs. Happy coding!
- 
- 
-
-
-
-
