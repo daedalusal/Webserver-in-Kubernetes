@@ -45,4 +45,5 @@ node server.js
 
 This will create a Kubernetes deployment with 3 pods running the simple web server.
 
-Feel free to explore and adapt the code and configurations to suit your needs. Happy coding!
+# Jenkins Pipeline (Automation)
+To automate the building, testing, and deployment process, you can set up a Jenkins pipeline. Included is a JenkinsFile but for that you need a working Jenkins installation inside the cluster or in your server.
