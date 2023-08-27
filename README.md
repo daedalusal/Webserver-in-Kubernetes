@@ -17,30 +17,30 @@ Follow these steps to set up and run the simple web server locally and deploy it
 
 ## 1. Clone this repository to your local machine:
 
-   git clone https://github.com/daedalusal/simple-webserver.git
-   cd simple-webserver
+   '''bash git clone https://github.com/daedalusal/simple-webserver.git
+   '''bash cd simple-webserver
 ## 1. Initialize a Node.js project and install dependencies:
-npm init -y
-npm install express
+ '''bash npm init -y
+ '''bash npm install express
 ## 2. Create the necessary folder structure:
 <img width="116" alt="image" src="https://github.com/daedalusal/Webserver-in-Kubernetes/assets/118228709/03160b13-f32f-442d-adce-d0c0e3dec967">
 
 ### Update the __public/index.html__ and __public/styles.css__ files to customize your web page.
 
-## Local Usage ##
+## '''bash  Local Usage ##
 Run the Node.js web server:
-'bash'node server.js
+    '''bash node server.js
 # Docker and Kubernetes Deployment
 
 ### 1. Build the Docker image:
-   docker build -t apps/simpleserver:1.0 .
+    '''bash docker build -t apps/simpleserver:1.0 .
 ### 2. Check if the image is created:
-   docker images
+    '''bash docker images
 ###  3. Deploy to Kubernetes using the provided 'kubernetes.yaml' file:
-   kubectl apply -f kubernetes.yaml This is the declarative option
+    '''bash kubectl apply -f kubernetes.yaml This is the declarative option
    
-   We can also do the same by using the imperative command 
-   kubectl create deployment simplewebserver --image=apps/simpleserver:1.0 --port=3000 --replicas=3
+###  We can also do the same by using the imperative command 
+    '''bash kubectl create deployment simplewebserver --image=apps/simpleserver:1.0 --port=3000 --replicas=3
   
 This will create a Kubernetes deployment with 3 pods running the simple web server.
 
