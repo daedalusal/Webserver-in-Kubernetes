@@ -24,11 +24,11 @@ npm init -y
 npm install express
 ## 2. Create the necessary folder structure:
 simple-webserver/
-├── node_modules/
+'├── node_modules/
 ├── public/
 │   ├── index.html
 │   └── styles.css
-└── server.js
+└── server.js'
 ### Update the __public/index.html__ and __public/styles.css__ files to customize your web page.
 
 ## Local Usage ##
@@ -41,8 +41,10 @@ node server.js
 ### 2. Check if the image is created:
    docker images
 ###  3. Deploy to Kubernetes using the provided 'kubernetes.yaml' file:
-   kubectl apply -f kubernetes.yaml
-
+   kubectl apply -f kubernetes.yaml This is the declarative option 
+   We can also do the same by using the imperative command 
+   kubectl create deployment simplewebserver --image=apps/simpleserver:1.0 --port=3000 --replicas=3
+  
 This will create a Kubernetes deployment with 3 pods running the simple web server.
 
 # Jenkins Pipeline (Automation)
