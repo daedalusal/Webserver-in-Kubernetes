@@ -28,7 +28,7 @@ Follow these steps to set up and run the simple web server locally and deploy it
 ### Update the __public/index.html__ and __public/styles.css__ files to customize your web page.
 
 ##  Local Usage ##
-###Run the Node.js web server:
+### Run the Node.js web server:
       node server.js
 # Docker and Kubernetes Deployment
 
