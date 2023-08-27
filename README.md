@@ -23,13 +23,8 @@ Follow these steps to set up and run the simple web server locally and deploy it
 npm init -y
 npm install express
 ## 2. Create the necessary folder structure:
-simple-webserver/
-## Project Folder Structure
-├── node_modules/
-├── public/
-│   ├── index.html
-│   └── styles.css
-└── server.js
+<img width="116" alt="image" src="https://github.com/daedalusal/Webserver-in-Kubernetes/assets/118228709/03160b13-f32f-442d-adce-d0c0e3dec967">
+
 ### Update the __public/index.html__ and __public/styles.css__ files to customize your web page.
 
 ## Local Usage ##
