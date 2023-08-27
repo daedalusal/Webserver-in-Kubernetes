@@ -24,11 +24,12 @@ npm init -y
 npm install express
 ## 2. Create the necessary folder structure:
 simple-webserver/
-'├── node_modules/'
-'├── public/'
-'│   ├── index.html'
-'│   └── styles.css'
-'└── server.js'
+## Project Folder Structure
+├── node_modules/
+├── public/
+│   ├── index.html
+│   └── styles.css
+└── server.js
 ### Update the __public/index.html__ and __public/styles.css__ files to customize your web page.
 
 ## Local Usage ##
