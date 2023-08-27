@@ -36,8 +36,8 @@ Follow these steps to set up and run the simple web server locally and deploy it
      docker build -t apps/simpleserver:1.0 .
 ### 2. Check if the image is created:
      docker images
-###  3. Deploy to Kubernetes using the provided 'kubernetes.yaml' file:
-     kubectl apply -f kubernetes.yaml This is the declarative option
+###  3. Deploy to Kubernetes using the provided 'kubernetes.yaml' file (This is the declarative option):
+     kubectl apply -f kubernetes.yaml 
    
 ###  We can also do the same by using the imperative command 
      kubectl create deployment simplewebserver --image=apps/simpleserver:1.0 --port=3000 --replicas=3
