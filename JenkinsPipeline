@@ -6,13 +6,6 @@ pipeline {
             steps {
                 git branch: 'main', url: 'https://github.com/daedalusal/Webserver-in-Kubernetes.git'
             }
-        }
-        
-        stage('Build') {
-            steps {
-                sh 'npm install express'
-            }
-        }
         
         stage('Deploy') {
             steps {
